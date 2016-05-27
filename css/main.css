@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto|Fondamento:400italic);
+
+* {
+font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 62.5%; 
+}
+
+span {
+  font-family: "Fondamento";
+  font-size: 1.8em;
+}
+
+nav li {
+  list-style: none;`
+  padding: 1em;
+}
+
+nav {
+/***Navigation***/
+/*<nav> should have a flexible inline display*/
+  font-size: 1.4em;
+ 
+/*each <li> or <a> is a button-link to another page*/
+
+/*<nav> ought to be sticky.*/
+}
+
+ul {
+  display: inline-block;
+
+}
+
+ul li {
+  display: inline-block;
+  width: 84px;
+  text-align: center;
+  border: 1em solid red;
+}
+
+
