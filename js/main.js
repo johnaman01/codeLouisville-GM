@@ -10,6 +10,9 @@ homeButton.onclick = function() {
 alert("ouch!");
 };
 
+//hide ul #dice
+
+
 /*adding custom greeting for user
 
 var userButton = document.querySelector('button');

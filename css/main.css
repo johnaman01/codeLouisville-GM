@@ -4,39 +4,73 @@ font-family: "Roboto", sans-serif;
 }
 
 body {
-  font-size: 62.5%; 
+  font-family: "Roboto";
+  font-size: 62.5%;
+  text-align: left;
+  margin: 0; 
+}
+
+ul {
+  padding: 0;
 }
 
 span {
   font-family: "Fondamento";
-  font-size: 1.8em;
+  font-size: 1.8rem;
+}
+
+/***li default***/
+li {
+  list-style: none;
+}
+
+/***Navigation***/
+  /*<nav> should have a flexible inline display*/
+nav {
+  font-size: 1.4rem;
+  width: auto;
+  text-align: center;
+  background-color: orange;
+  margin: 0;
+  /*<nav> ought to be sticky.*/
+}
+
+nav ul {
+  margin: 0;
 }
 
 nav li {
-  list-style: none;`
-  padding: 1em;
+  display: inline-flex;
+  border: 1px solid red;
 }
 
-nav {
-/***Navigation***/
-/*<nav> should have a flexible inline display*/
-  font-size: 1.4em;
- 
-/*each <li> or <a> is a button-link to another page*/
-
-/*<nav> ought to be sticky.*/
+/***Options***/
+#options-bar {
+  font-size: 1.6rem;
+  display: inline-flex;
+  margin: 0;
+  border: 2px dotted red;
 }
 
-ul {
+#options-bar > li {
   display: inline-block;
-
+  color: black;
+  padding: 1rem;
+  border: 2px solid blue;
 }
 
-ul li {
-  display: inline-block;
-  width: 84px;
-  text-align: center;
-  border: 1em solid red;
+#options-bar > li > ul li {
+  font-size: 1.2rem;
+  list-style-type: square;
+  color: yellow;
 }
 
+/***Table***/
+#table {
+  font-size: 1.6rem;
+  border: 2px solid green;
+}
+#table > ul {
+  display: inline-flex;
+}
 
