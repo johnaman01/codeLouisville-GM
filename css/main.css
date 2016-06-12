@@ -15,8 +15,11 @@ ul {
 }
 
 span {
+  display: inline-flex;
   font-family: "Fondamento";
   font-size: 1.8rem;
+  background-color: green;
+  width: 100%;
 }
 
 /***li default***/
@@ -46,21 +49,24 @@ nav li {
 
 /***Options***/
 #options-bar {
-  font-size: 1.6rem;
   display: inline-flex;
+  font-size: 1.2rem;
   margin: 0;
   border: 2px dotted red;
+  width: 100%;
 }
 
 #options-bar > li {
   display: inline-block;
+  font-size: 1.0rem;
   color: black;
   padding: 1rem;
   border: 2px solid blue;
+  width: 100%;
 }
 
 #options-bar > li > ul li {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   list-style-type: square;
   color: yellow;
 }
@@ -72,5 +78,12 @@ nav li {
 }
 #table > ul {
   display: inline-flex;
-}
+  text-align: center;
+  width: 100%;
+  }
 
+#table > ul > li {
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}

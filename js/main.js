@@ -10,29 +10,29 @@ homeButton.onclick = function() {
 alert("ouch!");
 };
 
-//hide ul #dice
-
-
-/*adding custom greeting for user
-
-var userButton = document.querySelector('button');
-var myHeading = document.querySelector('h2');
-function setUserName() {
-  var myName = prompt('Please enter your name.');
-  localStorage.setItem('name', myName);
-  myHeading.textContent = 'Create your random encounter with Ranook, ' + myName + '!';
-} 
-if(!localStorage.getItem('name')) {
-  setUserName();
-} else {
-  var storedName = localStorage.getItem('name');
-  myHeading.textContent = 'Create your random encounter with Ranook, ' + storedName + '!';
-}
-userButton.onclick = function() {
-  setUserName();
+/*roller constructor function
+/
+function Roller(dice) {
+  this.dice = dice;
 }
 
+Roller.prototype.randomNumber(dice) {
+  
+}
+
+Roller.prototype.match() {
+
+}
+*
 */
+
+//bind rollButton to randomNumber function
+var rollButton = document.querySelector('#rollButton');
+rollButton.onclick = function() {
+  var sides = 6;  
+  var randomNumber = Math.floor(Math.random() * sides) + 1;
+alert(randomNumber);
+}
 
 /*encounters array meant to hold possible encounter key-value pairs
 var encounters = [
@@ -75,10 +75,11 @@ var encounters = [
 ];
 */
 
+/*
 var goblin = new Object();
 goblin.level = 1;
 goblin.name = "Goblin";
 goblin.number = 3;
 goblin.stealth = 12;
 goblin["minimum description"] = "You hear a dim-witted chuckle in the trees to your left, and spy three goblins conspiring there.  They don't notice you...";
-
+*/
