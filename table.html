@@ -15,42 +15,53 @@
   </ul>
   </nav>
     <ul id="options-bar">
-      <li>dX
-        <ul>
-          <li>d2</li>
-          <li>d4</li>
-          <li>d6</li>
-          <li>d8</li>
-          <li>d10</li>
-          <li>d12</li>
-          <li>d20</li>
-        </ul>
-      </li>      
-      <li>Area
-        <ul>
-          <li>Forest</li>
-          <li>City</li>
-          <li>Dungeon</li>
-          <li>Open Land</li>
-        </ul>
-      </li>      
-      <li>Lvl
-        <ul>
-          <li>input</li>
-        </ul>
+      <li id="dx">dx
+	<select>
+	  <optgroup label="dx">dx
+	    <option value=2>d2</option>
+	    <option value=4>d4</option>
+	    <option value=6 selected=true>d6</option>
+	    <option value=8>d8</option>
+	    <option value=10>d10</option>
+	    <option value=12>d12</option>
+	    <option value=20>d20</option>
+	  </optgroup>
+	</select>
       </li>
-      <li>Description
-        <ul>
-          <li>ON</li>
-          <li>OFF</li>
-        </ul>
-      </li>      
-      <li>Sneaky
-        <ul>
-          <li>ON</li>
-          <li>OFF</li>
-        </ul>
-      </li>      
+      <li id="area">Area
+	<select>
+	  <optgroup label="Area">
+	    <option value='forest'>Forest</option>
+	    <option value='city'>City</option>
+	    <option value='dungeon'>Dungeon</option>
+	    <option value='open'>Open Land</option>
+	  </optgroup>
+	</select>      
+      </li>
+      <li id="level">Level
+	<select>
+	  <optgroup label="Lvl">
+	    <option>On</option>
+	    <option>On</option>
+	  </optgroup>
+	</select>
+      </li>
+      <li id="description">Description
+	<select>
+	  <optgroup label="Description">
+	    <option>ON</option>
+	    <option>OFF</option>
+	  </optgroup>
+	</select> 
+      </li>
+      <li id="surprise">Surprise
+	<select>
+	  <optgroup label="Surprise">
+	    <option value=''>ON</option>
+	    <option value=''>OFF</option>
+	  </optgroup>
+	</select>      
+      </li>
     </ul>
   <div id="table">
     <ul id"tableHead">

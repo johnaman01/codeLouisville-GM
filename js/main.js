@@ -10,27 +10,11 @@ homeButton.onclick = function() {
 alert("ouch!");
 };
 
-/*roller constructor function
-/
-function Roller(dice) {
-  this.dice = dice;
-}
-
-Roller.prototype.randomNumber(dice) {
-  
-}
-
-Roller.prototype.match() {
-
-}
-*
-*/
-
 //bind rollButton to randomNumber function
 var rollButton = document.querySelector('#rollButton');
 rollButton.onclick = function() {
   var sides = 6;  
-  var randomNumber = Math.floor(Math.random() * sides) + 1;
+  var randomNumber = Math.ceil(Math.random() * sides);
 alert(randomNumber);
 }
 
