@@ -1,15 +1,26 @@
-"
+"			
 "set numbers in left column
 :set number
+"indenting
+:set tabstop=8
 "
-"define F1 to show customized \"help file
+:set shiftwidth=2
+"
+:set autoindent
+"
+:set smartindent
+"
+:set softtabstop=2
+"
+"Tags
+:set tags=./tags
+"
+"define <F2> to show customized \"help file
 :map #2 :!less ~/.vi_help
-"define <F2> to wq!
+"define <F3> to wq!
 :map #3 :w!
-"
-:map #4 :%s/
-"
-:map #5 :buffer
-"
-:map #9 :qa!
+"define <F5> as search and replace
+:map #5 :%s/
+"define <F7> as buffer
+:map #7 :buffer
 "
