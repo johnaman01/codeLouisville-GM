@@ -1,0 +1,38 @@
+{  
+  "wolf": {
+    "level": 1,
+    "name": "wolf",
+    "number": 1,
+    "surprise": true
+  },
+  "goblin": {
+    "level": 1,
+    "name": "goblin",
+    "number": 1,
+    "surprise": true
+  },
+  "orc": {
+    "level": 2,
+    "name": "orc",
+    "number": 1,
+    "surprise": true
+  },
+  "elf": {
+    "level": 2,
+    "name": "elf",
+    "number": 1,
+    "surprise": true
+  },
+  "dwarf": {
+    "level": 3,
+    "name": "dwarf",
+    "number": 1,
+    "surprise": true
+  },
+  "strange animal": {
+    "level": 3,
+    "name": "strange animal",
+    "number": 1,
+    "surprise": true
+  }
+}
