@@ -22,5 +22,5 @@
 "define <F5> as search and replace
 :map #5 :%s/
 "define <F7> as buffer
-:map #7 :buffer
+:map #7 :buffers
 "
