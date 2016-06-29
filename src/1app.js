@@ -9,8 +9,15 @@ app.get('/', function (req, res) {
   res.send('<h1>hey there!!!</h1>');
   });
 
-app.get('/catalog', function(req, res) {
-  res.send(catalog);
+app.get('/catalog/:name?', function(req, res) {
+  var name = req.params.name;
+  if (name === undefined) {
+    res.status(503);
+    res.send("This creature is not yet or extinct!");
+  } else {
+    var creature = catalog[name];
+    res.send(creature);
+    }
   });
 
 app.listen(3000, function () {
