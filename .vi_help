@@ -1,0 +1,72 @@
+------------------
+|		 |
+| vi Help Screen |
+|		 |
+------------------
+
+
+Customized Function Keys
+------------------------
+
+  <F2> - Help Screen (this screen message)
+  <F3> - Write
+  <F5> - Search and Replace
+  <F7> - Buffer
+
+
+Navigation
+----------
+  
+  ctrl-o  - Jump back
+  ctrl-i  - Jump forward
+  nG......- move to the end of the current file
+  0	  - move to the beginning of the current line (number zero)
+  $.......- move to the end of the current line
+  w	  - move forward count word(s)
+  b.......- move backward count word(s)
+  G	  - move to the end of the current file
+  (.......- count sentences back
+  )	  - count sentences forward
+  {.......- count paragraphs back
+  }	  - count paragraphs forward
+
+
+Operations
+----------
+  
+  ctrl-n  - Word completion 
+  ctrl-w  - Erases word
+  cc - change
+  dd - delete
+  yy - yank into register
+  / - search (use n to continue into file)
+
+//use d3w to delete the next 3 words
+
+
+Saving and Reading Files
+------------------------
+
+  :r filename <return>	      - 
+  :w			      - 
+  :w newfile <return>	      - writes working file into newfile
+  :12, 35w smallfile <return> -	writes lines 12-35 into new smallfile
+  :w! prevfile <return>	      - write current file over an old file === prevfile
+
+
+Text Selection
+--------------
+
+  V       -  selects entire lines 
+  v       -  selects range of text
+  ctrl-v  -  selects columns
+  gv      -  reselect block
+
+
+Configuration
+-------------
+
+  ~/.exrc	    - edit to implement vi configuration
+  ~/.vi_help	    - edit THIS FILE
+  :! "command"	    - enters command as if from terminal
+  <ctrl-v><ctrl-m>  - creates return after :! "command"
