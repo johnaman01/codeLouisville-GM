@@ -5,8 +5,11 @@ var express = require('express'),
 
 var app = express();
 
+app.set('view engine', 'pug');
+app.set('views', __dirname + '/templates');
+
 app.get('/', function (req, res) {
-  res.send('<h1>hey there!!!</h1>');
+  res.render('index');
   });
 
 app.get('/catalog/:name?', function(req, res) {
@@ -15,8 +18,8 @@ app.get('/catalog/:name?', function(req, res) {
     res.status(503);
     res.send("This creature is not yet or extinct!");
   } else {
-    var creature = catalog[name];
-    res.send(creature);
+    var creature = catalog[name] || {};
+    res.render('cat', {creature: creature});
     }
   });
 
