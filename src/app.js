@@ -1,12 +1,12 @@
 'use strict';
 
 var express = require('express'),
-    catalog = require('./mock/catalog.json');
+    catalog = require('./json/catalog.json');
 
 var app = express();
 
 app.set('view engine', 'pug');
-app.set('views', __dirname + '/templates');
+app.set('views', __dirname + '/views');
 
 app.get('/', function (req, res) {
   res.render('index');
