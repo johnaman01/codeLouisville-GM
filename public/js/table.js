@@ -6,8 +6,6 @@ function Table(row, creature, description, level) {
   this.level = level
 }
 
-
-
 Table.prototype.list = function() {
   var encounters = "#" + this.row + ". " + this.creature + " " + this.description + " " + this.level;
 }
