@@ -1,0 +1,82 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" lang="eng">
+  <title>GM Toolkit</title>
+  <link rel="stylesheet" href="public/css/main.css">
+</head>
+<body>
+  <span>Ranook'ed</span>
+  <nav>
+  <ul>
+    <li><a href="index.html" id="home">Home</a></li>
+    <li><a href="table.html">Table</a></li>
+    <li><a href="catalog.html">Catalog</a></li>
+  </ul>
+  </nav>
+    <ul id="options-bar">
+      <li id="dx">dx
+	<select>
+	  <optgroup label="dx">dx
+	    <option value=2>d2</option>
+	    <option value=4>d4</option>
+	    <option value=6 selected=true>d6</option>
+	    <option value=8>d8</option>
+	    <option value=10>d10</option>
+	    <option value=12>d12</option>
+	    <option value=20>d20</option>
+	  </optgroup>
+	</select>
+      </li>
+      <li id="area">Area
+	<select>
+	  <optgroup label="Area">
+	    <option value='forest'>Forest</option>
+	    <option value='city'>City</option>
+	    <option value='dungeon'>Dungeon</option>
+	    <option value='open'>Open Land</option>
+	  </optgroup>
+	</select>      
+      </li>
+      <li id="level">Level
+	<select>
+	  <optgroup label="Lvl">
+	    <option>On</option>
+	    <option>On</option>
+	  </optgroup>
+	</select>
+      </li>
+      <li id="description">Description
+	<select>
+	  <optgroup label="Description">
+	    <option>ON</option>
+	    <option>OFF</option>
+	  </optgroup>
+	</select> 
+      </li>
+      <li id="surprise">Surprise
+	<select>
+	  <optgroup label="Surprise">
+	    <option value=''>ON</option>
+	    <option value=''>OFF</option>
+	  </optgroup>
+	</select>      
+      </li>
+    </ul>
+  <div id="table">
+    <ul id"tableHead">
+      <button id="rollButton">dSix</button>
+      <li id="number">#</li>
+      <li>Name</li>
+      <li>Lvl</li>
+      <li>Expand</li>
+    </ul>
+  </div>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+       crossorigin="anonymous"></script>
+<script src="public/js/jquery.js"></script> 
+<script src="public/js/main.js"></script>
+<script src="public/js/table.js"></script>
+<script src="public/js/testing.js"></script>
+</body>
+</html>
