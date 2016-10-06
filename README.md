@@ -1,32 +1,26 @@
 #codeLouisville-fullStack Project
 ##**TO DO**
-##*6.19.16*##
+##*10.06.16*##
 
 #**General**#
-- [ ] complete Node.js in Treehouse
+- [ ] introduce Bootstrap 
 - [ ]
 
 #**Github*#
-- [ ] push updated Ranook; pull to laptop
+- [x] push updated Ranook; pull to laptop
 
 #**HTML**#
-- [x] to set up the index.html file
-- [ ] add app.js and router.js to file system and attach to appropriate html
-- [x] rename images.html to table.html
-- [ ] create DRY programming for Ranook.net
+- [ ] rename images.html to table.html
 - [ ]
 
 #**CSS**#
-- [x] begin css
 - [ ]
 
 #**JS**#
-- [ ] add encounters array
+- [x] add encounters array
 - [ ]
 
-#**The multitude and disgregation of impulses and the lack of any systematic order among them result in a "weak will"; their coordination under a single predominant impulse results in a "strong will"...**#
->*Nietzche* 
-
-:heart: :black_circle:
-
+#**RANOOK is a random encounter generator that can be used by GM's or table-top role playing games to create a random encounter in a pinch.  RANOOK only generates descriptive text that the GM then adapts to whatever game system is being used.  In other words, RANOOK as released is unable to generate mechanical data applicable to the randomly selected encounter.
+        RANOOK ought to be a single page application, both simple to use and aesthetically pleasing.  It is best when incorporated into GM preparation of game sessions, either for ideas or as a tool to create a classic, random encounter table.**#
+>*LL* 
 
