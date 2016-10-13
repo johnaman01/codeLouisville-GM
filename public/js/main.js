@@ -5,10 +5,10 @@ var myHeading = document.querySelector('span');
 myHeading.textContent = 'Ranook is really Nikki!';
 
 //handler for clicking homeButton 
-var homeButton = document.querySelector('#home');
-homeButton.onclick = function() {
-alert("ouch!");
-};
+//var homeButton = document.querySelector('#home');
+//homeButton.onclick = function() {
+//alert("ouch!");
+//};
 
 //bind rollButton to randomNumber function
 var rollButton = document.querySelector('#rollButton');

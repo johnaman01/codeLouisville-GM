@@ -12,9 +12,9 @@ Table.prototype.list = function() {
 
 var goblin = new Table(1, goblin, "green and ugly", 1);
 
-var dog = "bark!";
-var listItem = document.getElementById("item1");
-listItem.textContent = goblin.description;
+//var dog = "bark!";
+//var listItem = document.getElementById("item1");
+//listItem.textContent = goblin.description;
 
 //creature constructor function
 
