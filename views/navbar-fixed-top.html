@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -75,23 +75,19 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-        </p>
+        <h1>Directions</h1>
+        <p>Build your own random encounter tables by entering as many as you like below.  Save two encounter tables, one labeled Heroic, the other Epic.  After saving the Epic table, reload the Heroic one and click the Roll dx button.  Your encounter should flash up in an alert window.</p>
       </div>
       <div class="page-header">
-        <h1>Grid examples</h1> 
 	<p class="lead">Dolorum ipsum or something else here</p>
-        <h3>Two columns</h3>
-        <p>Get two columns <strong>starting at desktops and scaling to large desktops</strong>.</p>
+        <p><strong>Create below</strong>.</p>
         <div class="row">
-          <div class="col-md-8">.col-md-8
+          <div class="col-md-8"><input type="text" ng-model="yourName" placeholder="Enter an encounter here">
 	    <div class="row">
-	      <div class="col-md-2">.col-md-6</div>
-	      <div class="col-md-10">.col-md-6</div>
+	      <div class="col-md-2">#</div>
+              <div class="col-md-10">
+                 <h1>{{yourName}}</h1>
+              </div>
 	    </div>
 	  </div>
         <div class="col-md-4"><button id="rollButton">Roll Die</button></div>
@@ -108,6 +104,7 @@
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 <script src="../public/js/jquery.js"></script> 
 <script src="../public/js/main.js"></script>
 <script src="../public/js/table.js"></script>
