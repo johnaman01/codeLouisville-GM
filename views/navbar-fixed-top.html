@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -88,10 +88,10 @@
         <h3>Two columns</h3>
         <p>Get two columns <strong>starting at desktops and scaling to large desktops</strong>.</p>
         <div class="row">
-          <div class="col-md-8">.col-md-8
-	    <div class="row">
-	      <div class="col-md-2">.col-md-6</div>
-	      <div class="col-md-10">.col-md-6</div>
+	<div class="col-md-8"><input type="text" ng-model="encounter" placeholder="Enter an encounter here:">
+	  <div class="row">
+	      <div class="col-md-2">#</div>
+	      <div class="col-md-10">{{encounter}}</div>
 	    </div>
 	  </div>
         <div class="col-md-4"><button id="rollButton">Roll Die</button></div>
@@ -108,6 +108,9 @@
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="encounters.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 <script src="../public/js/jquery.js"></script> 
 <script src="../public/js/main.js"></script>
 <script src="../public/js/table.js"></script>
