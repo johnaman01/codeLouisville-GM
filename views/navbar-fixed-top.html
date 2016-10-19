@@ -78,24 +78,22 @@
         <h1>Directions</h1>
         <p>Build your own random encounter tables by entering as many as you like below.  Save two encounter tables, one labeled Heroic, the other Epic.  After saving the Epic table, reload the Heroic one and click the Roll dx button.  Your encounter should flash up in an alert window.</p>
       </div>
-      <div class="page-header">
+      <div class="page-header">page header
 	<p class="lead">Dolorum ipsum or something else here</p>
         <p><strong>Create below</strong>.</p>
-        <div class="row">
-	<div class="col-md-8"><input type="text" ng-model="encounter" placeholder="Enter an encounter here:">
-	  <div class="row">
-	      <div class="col-md-2">#</div>
-	      <div class="col-md-10">{{encounter}}</div>
-          <div class="col-md-8"><input type="text" ng-model="yourName" placeholder="Enter an encounter here">
+          <div class="row">
+	    <div class="col-md-12">
+              <input type="text" ng-model="encounter" placeholder="Enter an encounter here:">
+              <button id="addEnc">Add</button>
+              <button id="saveTab">Save</button>
+              <button id="loadTab">Load</button>
 	    <div class="row">
 	      <div class="col-md-2">#</div>
-              <div class="col-md-10">
-                 <h1>{{yourName}}</h1>
-              </div>
+	      <div class="col-md-10">{{encounter}}</div>
 	    </div>
-	  </div>
-        <div class="col-md-4"><button id="rollButton">Roll Die</button></div>
-      
+          <div class="col-md-12">
+            <button id="rollButton">Roll Die</button>
+        </div>
       </div>
     </div> <!-- /container -->
 
