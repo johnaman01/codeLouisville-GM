@@ -3,14 +3,17 @@
 var express = require('express'),
     catalog = require('./public/json/catalog.json'),
     app = express();
-
-//serve static files in public
-app.use(express.static('public'));
 //set view engine
 app.set('view engine', 'html');
-//
+//serve static files in views
+app.use(express.static('views'));
+//serve static files in node_modules
+app.use("/styles", express.static(__dirname + "/node_modules/bootstrap/dist/css/"));
+//serve static files (angular) in node_modules
+app.use("/scripts", express.static(__dirname + "/node_modules/angular/"));
+//get
 app.get('/', function (req, res) {
-  res.render('views/index');
+  res.render('index');
 });
 //catalog json
 app.get('/public/json/catalog/:name?', function(req, res) {
@@ -23,7 +26,6 @@ app.get('/public/json/catalog/:name?', function(req, res) {
     res.render('catalog', {creature: creature});
   }
 });
-
 //nodemon message
 app.listen(3000, function () {
   console.log("The frontend server is running on localhost:3000.");

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/johnaman01/game_master_toolkit#readme",
   "dependencies": {
+    "angular-route": "^1.5.8",
     "express": "^4.14.0",
     "pug": "^2.0.0-beta3"
   }
