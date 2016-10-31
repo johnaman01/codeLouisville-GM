@@ -2,7 +2,7 @@
   "name": "game_master_toolkit",
   "version": "1.0.0",
   "description": "expressed",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +19,8 @@
   "dependencies": {
     "angular-route": "^1.5.8",
     "express": "^4.14.0",
-    "pug": "^2.0.0-beta3"
+  },
+  "devDependencies": {
+    "express": "^4.14.0"
   }
 }

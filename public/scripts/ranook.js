@@ -1,4 +1,5 @@
-//called ranookApp; below is first controller=table;
+"use strict";
+
 angular.module("ranookApp", [])
   .controller("TableController", function () {
     var encTable = this;
