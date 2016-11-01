@@ -80,19 +80,20 @@
       <div class="page-header">page header
 	<p class="lead">Dolorum ipsum or something else here</p>
         <p><strong>Create a table below</strong>.</p>
-          <div class="row" ng-controller="TableController as encTable">
+          <!-- TableController -->
+          <div class="row" ng-controller="TableController">
 	    <div class="col-md-12">
-              <form ng-submit="encTable.addEncounter()"> 
-                <input type="text" ng-model="encTable.encText" placeholder="Enter an encounter here:">
+              <form ng-submit="addEncounter()"> 
+                <input type="text" ng-model="encText" placeholder="Enter an encounter here:">
                 <button id="addEnc">Add</button>
               <form> 
-                <button id="removeEnc" ng-click="encTable.removeEncounter()">Remove</button>
+                <button id="removeEnc" ng-click="removeEncounter()">Remove</button>
               </form>
               <button id="saveTable">Save</button>
               <button id="loadTable">Load</button>
-              <span>Count determines d{{encTable.encounters.length}}</span>
-	    <div class="row" ng-repeat="encounter in encTable.encounters">
-	      <div class="col-md-2">{{encTable.encounters.length}} 
+              <span>Count determines d{{encounters.length}}</span>
+	    <div class="row" ng-repeat="encounter in encounters">
+	      <div class="col-md-2">{{encounters.length}} 
                 <input type="checkbox" ng-model="encounter.done"> 
               </div>
 	      <div class="col-md-10">{{encounter.text}}</div>
