@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module("ranookApp", [])
+angular.module("ranookApp")
   .controller("TableController", function () {
     var encTable = this;
     encTable.encounters = [ 

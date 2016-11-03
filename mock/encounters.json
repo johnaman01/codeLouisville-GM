@@ -1,44 +1,38 @@
-{  
-  "wolf": {
+[{  
     "level": 1,
     "name": "wolf",
     "number": 1,
     "surprise": true,
     "description": "You hear a growl very near to you in the trees to the east and from a further distance to the west, the howling of wolves."
   },
-  "goblin": {
-    "level": 1,
+    {"level": 1,
     "name": "goblin",
     "number": 1,
     "surprise": true,
     "description": "I say that these are the pettiest creatures in all the world...sniveling, stinking, wretched and pathetic, goblins gang up on unwary heroes in order to steal their treasures to be used  as trinkets or broken down into raw and senselessly used material."
   },
-  "orc": {
-    "level": 2,
+    {"level": 2,
     "name": "orc",
     "number": 1,
     "surprise": true,
     "description": ""
   },
-  "elf": {
-    "level": 2,
+    {"level": 2,
     "name": "elf",
     "number": 1,
     "surprise": true,
     "description": ""
   },
-  "dwarf": {
-    "level": 3,
+    {"level": 3,
     "name": "dwarf",
     "number": 1,
     "surprise": true,
     "description": ""
   },
-  "strange animal": {
-    "level": 3,
+    {"level": 3,
     "name": "strange animal",
     "number": 1,
     "surprise": true,
     "description": ""
   }
-}
+]
