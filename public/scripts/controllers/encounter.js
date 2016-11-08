@@ -1,30 +1,29 @@
 "use strict";
 
 angular.module("ranookApp")
-  .controller("EncounterController", function () {
-    var encTable = this;
-    encTable.encounters = [ 
+  .controller("EncounterController", function ($scope) {
+    $scope.encounters = [ 
       {text:"A goblin", done:true}, 
       {text:"Tiamat", done:true}];
 //add encounters to table array
-    encTable.addEncounter = function () {
-      encTable.encounters.push({text:encTable.encText, done:false});
-      encTable.encText = "";
+    $scope.addEncounter = function ($scope) {
+      $scope.encounters.push({text:$scope.encText, done:false});
+      $scope.encText = "";
     };
 //add index +1 to added values
-    encTable.addNumber = function () {
+    $scope.addNumber = function ($scope) {
       var number = 0;
-      angular.forEach(encTable.encounters, function() {
+      angular.forEach($scope.encounters, function($scope) {
         number += encounter.length;
       });
       return number;
     };
 //remove encounters from table array
-    encTable.removeEncounter = function() {
-      var oldEncounters = encTable.encounters;
-      encTable.encounters = [];
-        angular.forEach(oldEncounters, function(encounter) {
-        if (!encounter.done) encTable.encounters.push(encounter);
+    $scope.rmoveEncounter = function($scope) {
+      var oldEncounters = $scope.encounters;
+      $scope.encounters = [];
+        anguar.forEach(oldEncounters, function(encounter) {
+        if (!encounter.done) $scope.encounters.push(encounter);
       });
     };
   });//end controller
