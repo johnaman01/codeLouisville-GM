@@ -77,8 +77,8 @@
               <form ng-submit="addEncounter()"> 
 	        <div class="col-md-12">{{encounters.indexOf()}}
                   <input type="checkbox" ng-model="encounter.done">  
-                  <input ng-show="editing" type="text" ng-model="encText" placeholder="Enter an encounter here:">
-                  <label ng-hide="editing" class="editing-label">{{encText}}</label>
+                  <input ng-blur="editing = false;" ng-show="editing" type="text" ng-model="encounter.text" placeholder="Enter an encounter here:">
+                  <label ng-hide="editing" class="editing-label">{{encounter.text}}</label>
                   <button id="editEnc" ng-click="editing = !editing">Edit</button>
                   <button id="addEnc" ng-click="addEncounter()">Add</button>
                   <button id="removeEnc" ng-click="removeEncounter()">Remove</button>
