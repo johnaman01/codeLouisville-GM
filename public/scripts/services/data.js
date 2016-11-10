@@ -1,17 +1,20 @@
-"use strict";
+ "use strict"; 
+ angular.module('ranookApp') 
+  .service('dataService', function ($http) {
+    this.helloConsole = function () {
+      console.log("This is the helloConsole service!");  
+    };
 
-angular.module("ranookApp");
-.service("dataService", function($http) {
-  this.getEncounters = function(cb) {
-    $http.get("/api/encounters").then(cb);
-  };
-
-  this.deleteEncounters = function(encounter) {
-    console.log("I deleted the possibility of" + encounter.name "encounter!");
-  };
-
-  this.saveEncounters = function(encounters) {
-    console.log("I saved the" + encounter.name "encounter!");
-  };
-
-});
+    this.getEncounters = function (cb) {
+      $http.get("/mock/encounters.json")
+      .then(cb);
+    }
+    
+    this.deleteEncounter = function (encounter) {
+      console.log("The " + encounter.text + "has been deleted!");
+    }
+    
+    this.saveEncounters = function (encounters) {
+      console.log(encounters.length + " has been saved!");
+    }
+  });

@@ -1,31 +1,41 @@
 "use strict";
 
 angular.module("ranookApp")
-  .controller("EncounterController", function ($scope) {
-    $scope.encounters = [ 
-      {text:"A goblin", done:true}, 
-      {text:"Tiamat", done:true}];
-//add encounters to table array
-    $scope.addEncounter = function ($scope) {
-      $scope.encounters.push({text:$scope.encText, done:false});
-      $scope.encText = "";
-    };
-//add index +1 to added values
-    $scope.addNumber = function ($scope) {
-      var number = 0;
-      angular.forEach($scope.encounters, function($scope) {
-        number += encounter.length;
-      });
-      return number;
-    };
-//remove encounters from table array
-    $scope.rmoveEncounter = function($scope) {
-      var oldEncounters = $scope.encounters;
-      $scope.encounters = [];
-        anguar.forEach(oldEncounters, function(encounter) {
-        if (!encounter.done) $scope.encounters.push(encounter);
-      });
-    };
-  });//end controller
+.controller("encounterController", function($scope, dataService) {
+  $scope.encounters = [
+    {text: "here is one"},
+    {text: "number two in static"}
+  ];
   
+  $scope.learningNgChange = function () {
+    console.log("an input changed");
+  };
+
+  $scope.addEncounter = function () {
+    var encounter = {text: "this is a new encounter"};
+    $scope.encounters.unshift(encounter);
+  };
+
+  dataService.getEncounters(function(response) {
+    console.log(response.data); 
+    $scope.encounters = response.data;
+  });
+
+  $scope.deleteEncounter = function (encounter, $index) {
+   // dataService.deleteEncounter(encounter);
+    $scope.encounters.splice($index, 1);
+  };
+
+  $scope.saveEncounters = function () {
+    var filteredEncounters = $scope.encounters.filter(function(encounter) {
+      if(encounter.edited) {
+        return encounter;
+      };
+    });
+    dataService.saveEncounters(filteredEncounters);
+  };
+
+});
+
+
 

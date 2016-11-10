@@ -4,7 +4,7 @@ var express = require('express'),
     router = require("./api"),
     app = express();
 
-app.use("/public", express.static("public"));
+app.use('/', express.static("public"));
 console.log("../public");
 
 app.use("/api", router);
