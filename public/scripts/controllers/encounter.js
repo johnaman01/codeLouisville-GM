@@ -17,8 +17,9 @@ angular.module("ranookApp")
   };
 
   dataService.getEncounters(function(response) {
+    var encounters = response.data.encounters;
+    $scope.encounters = encounters;
     console.log(response.data); 
-    $scope.encounters = response.data;
   });
 
   $scope.deleteEncounter = function (encounter, $index) {

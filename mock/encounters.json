@@ -1,9 +1,15 @@
 [{  
     "level": 1,
-    "text": "wolf",
+    "text": "Ranook the High Wizard of Riddle",
     "number": 1,
     "surprise": true,
     "description": "You hear a growl very near to you in the trees to the east and from a further distance to the west, the howling of wolves."
+  },
+    {"level": 1,
+    "text": "Tiamat",
+    "number": 1,
+    "surprise": true,
+    "description": "I say that these are the pettiest creatures in all the world...sniveling, stinking, wretched and pathetic, goblins gang up on unwary heroes in order to steal their treasures to be used  as trinkets or broken down into raw and senselessly used material."
   },
     {"level": 1,
     "text": "goblin",

@@ -82,13 +82,13 @@
                   <input ng-blur="editing = false" ng-show="editing" type="text" ng-model="encounter.text" ng-change="encounter.edited = true" placeholder="Enter an encounter here:">
                   <label ng-click="editing = true" ng-hide="editing" class="editing-label">{{encounter.text}}</label>
                   <button id="editEnc" ng-click="editing = !editing">Edit</button>
-                  <button id="saveEncs" ng-click="saveEncounters()">Save</button>
                   <button id="deleteEnc" ng-click="deleteEncounter()">Remove</button>
                 </div>
             </div>
 	    <div class="row">
 	    <div class="col-md-10">Where an encounter went before</div>
           <div class="col-md-12">
+            <button id="saveEncs" ng-click="saveEncounters()">Save</button>
             <button id="rollButton">Roll d{{encounters.length}}</button>
             <!--<button id="saveTable" ng-click="saveEncounters()">Save</button>-->
             <button id="loadTable">Load</button>

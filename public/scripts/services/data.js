@@ -6,7 +6,7 @@
     };
 
     this.getEncounters = function (cb) {
-      $http.get("/mock/encounters.json")
+      $http.get("/api/encounters")
       .then(cb);
     }
     
