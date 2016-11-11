@@ -71,31 +71,36 @@
       <div class="page-header">
 	<p class="lead">My Ranook</p>
         <p><strong>Create a table below</strong>.</p>
-          <div class="row" ng-controller="encounterController">
-            <div class="col-md-12" id="add">
-              <a href="" ng-click="addEncounter()">+ Add Encounter</a>
-            </div>
-            <input type="checkbox" ng-click="" >Select All</input>
+        
+<!--Here begins the IMPORTANT html-->
+        <div class="row" ng-controller="encounterController">
+          <div class="col-md-12" id="add">
+          <a href="" ng-click="addEncounter()">+ Add Encounter</a>
+          <input type="checkbox">Select All</input>
 	    <div class="col-md-12" ng-repeat="encounter in encounters">
-	        <div class="col-md-12">
-                  <input type="checkbox" ng-model="encounter.done">  
-                  <input ng-blur="editing = false" ng-show="editing" type="text" ng-model="encounter.text" ng-change="encounter.edited = true" placeholder="Enter an encounter here:">
-                  <label ng-click="editing = true" ng-hide="editing" class="editing-label">{{encounter.text}}</label>
-                  <button id="editEnc" ng-click="editing = !editing">Edit</button>
-                  <button id="deleteEnc" ng-click="deleteEncounter()">Remove</button>
-                </div>
+              <input type="checkbox" ng-model="encounter.selected">   
+              <input ng-blur="editing = false" ng-show="editing" type="text" ng-model="encounter.text" ng-change="encounter.edited = true" placeholder="Enter an encounter here:">
+              <label ng-click="editing = true" ng-hide="editing" class="editing-label">{{encounter.text}}</label>
+              <button id="editEnc" ng-click="editing = !editing">Edit</button>
+              <button id="deleteEnc" ng-click="deleteEncounter(encounter, $index)">Remove</button>
             </div>
-	    <div class="row">
-	    <div class="col-md-10">Where an encounter went before</div>
-          <div class="col-md-12">
-            <button id="saveEncs" ng-click="saveEncounters()">Save</button>
-            <button id="rollButton">Roll d{{encounters.length}}</button>
+          </div>
+	  <div class="row">
+            <div class="col-md-4">
+              <button id="saveEncs" ng-click="saveEncounters()">Save</button>
+            </div> 
+            <div class="col-md-4">
+              <button id="rollButton">Roll d{{encounters.length}}</button>
+            </div> 
             <!--<button id="saveTable" ng-click="saveEncounters()">Save</button>-->
-            <button id="loadTable">Load</button>
+            <div class="col-md-4">
+              <button id="loadTable">Load</button>
+            </div> 
             {{encounters}}
+          </div>
         </div>
-      </div>
-    </div> <!-- /container -->
+<!--There ends the IMPORTANT html-->        
+      </div> <!-- /container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

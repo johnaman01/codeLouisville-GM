@@ -4,8 +4,9 @@ var express = require('express'),
     router = require("./api"),
     app = express();
 
+require("./database");
+
 app.use('/', express.static("public"));
-console.log("../public");
 
 app.use("/api", router);
 
