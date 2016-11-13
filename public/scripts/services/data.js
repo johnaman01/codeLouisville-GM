@@ -11,7 +11,7 @@
     }
     
     this.deleteEncounter = function (encounter) {
-      console.log("The " + encounter.text + "has been deleted!");
+      console.log("The " + encounter.text + " encounter has been deleted!");
     }
     
     this.saveEncounters = function (encounters) {

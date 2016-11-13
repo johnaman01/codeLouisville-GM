@@ -23,7 +23,7 @@ angular.module("ranookApp")
   });
 
   $scope.deleteEncounter = function (encounter, $index) {
-   // dataService.deleteEncounter(encounter);
+    dataService.deleteEncounter(encounter);
     $scope.encounters.splice($index, 1);
   };
 

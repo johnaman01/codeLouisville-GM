@@ -17,18 +17,18 @@ router.get("/encounters", function(req, res) {
   res.json({encounters: encounters});
   });
 }); 
-  //Create route or POST
+  //Create |  POST
 router.post("/encounters", function(req, res) {
   var encounter = req.body;
   Encounter.create(encounter, function(err, encounter) {
     if (err) {
       return res.status(500).json({err: err.message}); 
     }
-  res.json({"encounter": encounter, message: "Encounter created."});
+  res.json({encounter: encounter, message: "Encounter created."});
   });
 });
 
-  //Update route or EDIT or PUT???
+  //Update | EDIT | PUT
 router.put("/encounters/:id", function(req, res) {
   var id = req.params.id;
   var encounter = req.body;
