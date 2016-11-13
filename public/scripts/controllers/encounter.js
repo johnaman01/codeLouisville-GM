@@ -33,9 +33,15 @@ angular.module("ranookApp")
         return encounter;
       };
     });
-    dataService.saveEncounters(filteredEncounters);
+    dataService.saveEncounters(filteredEncounters)
+    .finally($scope.resetEncounterState());
   };
 
+  $scope.resetEncounterState = function () {
+    $scope.encounters.forEach(function(encounter) {
+      encounter.edited = false;
+    });
+  };
 });
 
 

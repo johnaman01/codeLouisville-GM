@@ -13,4 +13,4 @@ var encounterSchema = new mongoose.Schema({
 
 var model = mongoose.model("Encounter", encounterSchema);
 
-module.exports = "model";
+module.exports = model;
