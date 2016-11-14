@@ -1,0 +1,39 @@
+
+/home/john/Web-projects/game_master_toolkit
+total 44
+drwxrwxr-x 7 john john 4096 Nov 13 12:01 .
+drwxrwxr-x 7 john john 4096 Nov  2 11:53 ..
+drwxrwxr-x 8 john john 4096 Nov 12 20:13 .git
+-rw-rw-r-- 1 john john   14 Nov  2 11:53 .gitignore
+drwxrwxr-x 2 john john 4096 Nov 10 21:31 mock
+drwxrwxr-x 6 john john 4096 Nov 12 16:44 node_modules
+-rw-rw-r-- 1 john john  689 Nov 12 16:44 package.json
+drwxrwxr-x 7 john john 4096 Nov 12 20:12 public
+-rw-rw-r-- 1 john john 1195 Nov  2 11:53 README.md
+drwxrwxr-x 4 john john 4096 Nov 12 18:21 src
+-rw-rw-r-- 1 john john   44 Nov 13 12:01 structure.txt
+
+/home/john/Web-projects/game_master_toolkit/mock
+total 12
+drwxrwxr-x 2 john john 4096 Nov 10 21:31 .
+drwxrwxr-x 7 john john 4096 Nov 13 12:03 ..
+-rw-rw-r-- 1 john john 1393 Nov 10 20:13 encounters.json
+
+/home/john/Web-projects/game_master_toolkit/node_modules
+total 24
+drwxrwxr-x 6 john john 4096 Nov 12 16:44 .
+drwxrwxr-x 7 john john 4096 Nov 13 12:04 ..
+drwxrwxr-x 2 john john 4096 Nov  2 11:54 angular-route
+drwxrwxr-x 4 john john 4096 Nov 12 16:44 body-parser
+drwxrwxr-x 4 john john 4096 Nov  2 11:54 express
+drwxrwxr-x 5 john john 4096 Nov 10 19:16 mongoose
+/home/john/Web-projects/game_master_toolkit/public
+total 36
+drwxrwxr-x 7 john john 4096 Nov 12 20:12 .
+drwxrwxr-x 7 john john 4096 Nov 13 12:06 ..
+drwxrwxr-x 7 john john 4096 Nov  2 11:53 assets
+-rw-rw-r-- 1 john john 6352 Nov 12 19:40 index.html
+drwxrwxr-x 2 john john 4096 Nov 10 17:25 mock
+drwxrwxr-x 5 john john 4096 Nov 10 15:27 scripts
+drwxrwxr-x 2 john john 4096 Nov  2 11:53 styles
+drwxrwxr-x 2 john john 4096 Nov  2 11:53 vendor
